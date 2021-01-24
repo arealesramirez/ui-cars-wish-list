@@ -1,5 +1,7 @@
 import React from "react";
 
+import Heading from 'react-bulma-components/lib/components/heading';
+
 import { getCars } from "../api/car.api";
 
 export default class ListCars extends React.Component {
@@ -21,11 +23,14 @@ export default class ListCars extends React.Component {
 
   render() {
     return (
-      <ul>
-        {this.state.cars.map((car) => (
-          <li key="{car.id}">{car.model}</li>
-        ))}
-      </ul>
+      <div>
+      <Heading size={5} renderAs="p">My Car Wish List</Heading>
+        <ul>
+          {this.state.cars.map((car) => (
+            <li key="{car.id}">{car.model}</li>
+          ))}
+        </ul>
+      </div>
     );
   }
 }
