@@ -2,7 +2,7 @@ import "./App.sass";
 
 import NavBar from "./components/nav/nav";
 import CarList from "./pages/car-list/car-list";
-import CarCreate from "./pages/car-create/car-create";
+import CarCreate from "./pages/car-create/car-create.jsx";
 
 import React from "react";
 import { Switch, Route } from "react-router-dom";
